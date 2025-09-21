@@ -3,7 +3,7 @@
 #### A Rust bot that detects arbitrage opportunities across Uniswap and QuickSwap DEX's on the Polygon network
 
 ### 1. Features
-###### 1. Polls token prices of WETH/USDC from quote Contracts.
+###### 1. Polls token prices of WETH/USDC from quote Contracts every 5 seconds.
 ###### 2. Detects arbitrage opportunities when price differences exceed a threshold.
 ###### 3. Simulates arbitrage profit including estimated gas cost which is 0.01$ per transaction.
 ###### 4. Configurable RPC URL, token pairs, and thresholds.
