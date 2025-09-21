@@ -87,14 +87,7 @@ The bot detects arbitrage opportunities between **Uniswap v3** and **QuickSwap v
 
 ### Demo Video
 
-```
-
-<video src="assets/demo.mov" controls width="720">
-  Your browser does not support the video tag. 
-  <a href="assets/demo.mp4">Download / Open video</a>
-</video>
-
-```
+![Demo](assets/demo.gif)
 
 
 
