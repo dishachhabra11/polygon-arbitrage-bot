@@ -2,7 +2,7 @@
 
 #### A Rust bot that detects arbitrage opportunities across DEXes like Uniswap and QuickSwap on the Polygon network
 
-### Features
+### 1. Features
 ###### 1. Polls token prices of WETH/USDC from quotes.
 ###### 2. Detects arbitrage opportunities when price differences exceed a threshold.
 ###### 3. Simulates arbitrage profit including estimated gas cost which is 0.01$ per transaction.
@@ -10,25 +10,25 @@
 ###### 5. Logs simulated opportunities to profit.txt file.
 
 
-### Installation & Setup
+### 2. Installation & Setup
 
-### Prerequisites
+#### Prerequisites
 - Rust (latest stable version)
 - Polygon RPC endpoint (Alchemy, Infura, or public node), used public node for this projetc
 - Cargo package manager
 
-### Clone the Repository
+#### Clone the Repository
 ```bash
 git clone https://github.com/dishachhabra11/polygon-arbitrage-bot
 cd polygon-arbitrage-bot
 ```
 
-### Install Dependencies
+#### Install Dependencies
 ```bash
 cargo build
 ```
 
-### Setup Environment Variables
+#### Setup Environment Variables
 Create a `.env` file in the project root:
 
 ```env
@@ -45,14 +45,13 @@ GAS_USDC_PER_TX=0.01    # estimated gas cost per transaction in USDC 0.01 (examp
 PROFIT_THRESHOLD=0    # only alert if net profit > $0
 ```
 
-### Usage
 
-### Run the Bot
+#### Run the Bot
 ```bash
 cargo run
 ```
 
-## 7. System Design / Architecture
+### 3. System Design / Architecture
 
 The bot follows a simple yet effective architecture:
 
@@ -62,11 +61,11 @@ The bot follows a simple yet effective architecture:
 4. **Profit Simulation**: Calculates potential arbitrage opportunities
 5. **Logging**: Records profitable opportunities above the minimum threshold
 
-### Architecture Flow
+#### Architecture Flow
 ```
 ## ⚡ Polygon Arbitrage Bot Architecture
 
-This bot detects arbitrage opportunities between **Uniswap v3** and **QuickSwap v3** on Polygon.
+The bot detects arbitrage opportunities between **Uniswap v3** and **QuickSwap v3** on Polygon.
 
 ### 🔹 Components
 
@@ -83,9 +82,6 @@ This bot detects arbitrage opportunities between **Uniswap v3** and **QuickSwap 
 - **Analytics**:  
   - Converts units, computes rates, and prints results.  
   - Logs profitable trades (`profit.txt`) if above threshold.
-- **Execution Layer (not implemented)**:  
-  - Currently only **detects** opportunities.  
-  - To trade live: add wallet signing + swap execution.
 
 ```
 
