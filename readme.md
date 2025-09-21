@@ -87,7 +87,7 @@ The bot detects arbitrage opportunities between **Uniswap v3** and **QuickSwap v
 
 ### Demo Video
 
-![Demo](assets/demo.gif)
+Watch here :- https://www.youtube.com/watch?v=956gz5vADYU
 
 
 
